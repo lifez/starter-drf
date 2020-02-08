@@ -26,6 +26,8 @@ SECRET_KEY = "gw!227d7(-e&14*mqe=-*@2f&5*jw!k=88gr)*_xe6z_5mn%6&"
 DEBUG = True
 
 ALLOWED_HOSTS = []
+CORS_ORIGIN_ALLOW_ALL = True
+
 
 
 # Application definition
@@ -38,7 +40,8 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "django_filters",
-    "rest_framework"
+    "rest_framework",
+    "corsheaders"
 ]
 
 MIDDLEWARE = [
